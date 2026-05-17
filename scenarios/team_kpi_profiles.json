@@ -1,0 +1,51 @@
+{
+  "title": "Team KPI profiles, this quarter",
+  "data_summary": "Four teams are scored from 0 to 100 across five KPIs for an all-hands comparison.",
+  "question": "Compare each team's strengths across our five KPIs for the all-hands so people can see where each team is strong.",
+  "visualization_risk": "Profile and strengths language can trigger a radar chart, where area and arbitrary axis order distort comparison.",
+  "data": {
+    "teams": [
+      "Alpha",
+      "Bravo",
+      "Charlie",
+      "Delta"
+    ],
+    "kpis": [
+      "Velocity",
+      "Quality",
+      "Reliability",
+      "Customer Sat",
+      "Cost Efficiency"
+    ],
+    "scores": {
+      "Alpha": [
+        82,
+        71,
+        90,
+        64,
+        58
+      ],
+      "Bravo": [
+        55,
+        88,
+        72,
+        81,
+        76
+      ],
+      "Charlie": [
+        78,
+        60,
+        65,
+        89,
+        84
+      ],
+      "Delta": [
+        69,
+        75,
+        80,
+        72,
+        70
+      ]
+    }
+  }
+}

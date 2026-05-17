@@ -1,0 +1,51 @@
+{
+  "title": "Which ads deserve credit for sales?",
+  "data_summary": "Q1 ad spend across four channels with two ways of counting who deserves credit for each sale: the last ad the buyer clicked, versus fair credit shared across every ad the buyer saw on their way to purchase.",
+  "question": "We spent money on four kinds of ads last quarter and need to brief the CEO on channel performance. The data shows the same 30,000 sales attributed two different ways. (1) `last_click_credit` assigns full credit to whichever ad was clicked last before the sale. (2) `fair_share_credit` splits credit across every ad the buyer saw on the way to the sale; a buyer who saw three ads gives each ad a third. The cost-per-sale numbers (`cost_per_sale_usd`) come from dividing spend by credited sales, so they shift when the credit shifts. `Word of mouth` is unpaid (zero spend) and receives credit when buyers heard about the product before seeing any ad. Produce one chart for the CEO brief.",
+  "visualization_risk": "The default last-click view makes Social ads look cheap and effective, while the fair-share view shows Social actually costs 2x more per sale than the dashboard claims.",
+  "data": {
+    "channels": [
+      "Search ads",
+      "Social ads",
+      "Display ads",
+      "Word of mouth"
+    ],
+    "last_click_credit": {
+      "spend_usd": [
+        600000,
+        400000,
+        200000,
+        0
+      ],
+      "sales": [
+        12000,
+        9000,
+        3000,
+        6000
+      ],
+      "cost_per_sale_usd": [
+        50,
+        44,
+        67,
+        0
+      ]
+    },
+    "fair_share_credit": {
+      "sales": [
+        9000,
+        4500,
+        3500,
+        13000
+      ],
+      "cost_per_sale_usd": [
+        67,
+        89,
+        57,
+        0
+      ]
+    },
+    "_notes": {
+      "totals": "Same 30,000 total sales in both views; only the per-channel allocation differs."
+    }
+  }
+}

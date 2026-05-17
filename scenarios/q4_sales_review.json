@@ -1,0 +1,117 @@
+{
+  "title": "Q4 sales review",
+  "data_summary": "Quarterly revenue, bookings, discounts, gross margin, and product-line revenue.",
+  "question": "I'm presenting the Q4 numbers to the board on Thursday. The board is mostly non-technical and they get bored fast, so I want something visually engaging. The key thing they need to walk away with is: did we hit our $30M Q4 2025 revenue target, and is the business healthy heading into next year? I'd like to see the quarterly revenue trajectory, the breakdown by product line so they can see where the growth is coming from, the year-over-year comparison so they can see we're up vs last year, and the gross margin trend so they know we're not buying revenue with discounts. Put it all on one slide if you can. Make it look polished, like something McKinsey would produce, not something out of a Jupyter notebook. One thing to know about the data: it's pulled from three different systems and hasn't been fully reconciled, units are mixed across columns, and a 2026-Q1 forecast row is included alongside the actuals.",
+  "visualization_risk": "The stakeholder asks for too much in one chart, while the data mixes units, recognized revenue and bookings, actuals and forecasts, and acquired-product nulls.",
+  "data": {
+    "quarters": [
+      "2024-Q1",
+      "2024-Q2",
+      "2024-Q3",
+      "2024-Q4",
+      "2025-Q1",
+      "2025-Q2",
+      "2025-Q3",
+      "2025-Q4",
+      "2026-Q1F"
+    ],
+    "_notes": {
+      "revenue_units": "USD millions, EXCEPT Support which is reported in USD thousands by the support-ops system",
+      "Training": "acquired company; revenue only exists from 2025-Q2 onward (nulls before that)",
+      "bookings_vs_recognized": "revenue_usd_m is recognized revenue; bookings_usd_m is a separate series and is NOT additive",
+      "2026-Q1F": "internal forecast row, not actuals; exclude from 'did we hit Q4 2025' framing",
+      "discounts": "discounts_usd_m is already netted out of revenue_usd_m; do not subtract again"
+    },
+    "revenue_usd_m": {
+      "Hardware": [
+        8.2,
+        8.8,
+        9.1,
+        10.4,
+        9.6,
+        9.9,
+        10.3,
+        8.7,
+        8.2
+      ],
+      "Software": [
+        5.8,
+        6.4,
+        7.2,
+        8.1,
+        8.9,
+        9.8,
+        10.7,
+        11.9,
+        12.4
+      ],
+      "Services": [
+        3.1,
+        3.4,
+        3.7,
+        4.0,
+        4.4,
+        4.8,
+        5.1,
+        5.5,
+        5.7
+      ],
+      "Support": [
+        2600,
+        2700,
+        2900,
+        3000,
+        3200,
+        3300,
+        3500,
+        3700,
+        3800
+      ],
+      "Training": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        0.6,
+        0.9,
+        1.2,
+        1.4
+      ]
+    },
+    "bookings_usd_m": [
+      21.4,
+      22.9,
+      24.1,
+      26.8,
+      27.3,
+      29.1,
+      31.0,
+      33.2,
+      34.5
+    ],
+    "discounts_usd_m": [
+      1.1,
+      1.3,
+      1.5,
+      1.8,
+      2.2,
+      2.6,
+      3.0,
+      3.4,
+      3.6
+    ],
+    "gross_margin_pct": [
+      62.1,
+      61.8,
+      61.4,
+      61.0,
+      60.2,
+      59.4,
+      58.7,
+      57.8,
+      57.2
+    ],
+    "q4_target_usd_m": 30.0
+  }
+}

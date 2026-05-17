@@ -1,0 +1,138 @@
+{
+  "title": "Consumer app engagement, last 12 months",
+  "data_summary": "Monthly daily active users rise for 12 months, while signup-cohort retention declines across successive cohorts.",
+  "question": "Produce one chart for the monthly engagement review. The accompanying dataset has two views of the same product over the last 12 months: (1) `dau_thousands`, the daily-active-users series indexed by `months`; and (2) `cohort_retention_pct_by_month_since_signup`, a triangular matrix where each row is a signup cohort (keyed by the month they joined) and each column is the percent of that cohort still active N months later (M1 through M6, with `null` where the cohort is too young to have that data point yet).",
+  "visualization_risk": "The aggregate DAU line can make engagement look healthy while hiding worsening cohort retention.",
+  "data": {
+    "months": [
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04"
+    ],
+    "dau_thousands": [
+      142,
+      151,
+      159,
+      168,
+      178,
+      187,
+      198,
+      210,
+      224,
+      239,
+      256,
+      274
+    ],
+    "cohort_signup_month": [
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02"
+    ],
+    "cohort_retention_pct_by_month_since_signup": {
+      "_columns": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "2025-05": [
+        62,
+        48,
+        41,
+        37,
+        34,
+        32
+      ],
+      "2025-06": [
+        60,
+        46,
+        39,
+        35,
+        32,
+        30
+      ],
+      "2025-07": [
+        58,
+        44,
+        37,
+        33,
+        30,
+        28
+      ],
+      "2025-08": [
+        55,
+        41,
+        34,
+        30,
+        27,
+        25
+      ],
+      "2025-09": [
+        52,
+        38,
+        31,
+        27,
+        24,
+        null
+      ],
+      "2025-10": [
+        49,
+        35,
+        28,
+        24,
+        null,
+        null
+      ],
+      "2025-11": [
+        46,
+        32,
+        25,
+        null,
+        null,
+        null
+      ],
+      "2025-12": [
+        43,
+        29,
+        null,
+        null,
+        null,
+        null
+      ],
+      "2026-01": [
+        40,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "2026-02": [
+        38,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  }
+}
